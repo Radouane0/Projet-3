@@ -1,0 +1,14 @@
+.infos-restau {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__lieu {
+        display: flex;
+        justify-content: center;
+    }
+    &__liste {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

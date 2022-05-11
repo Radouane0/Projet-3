@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 *,
 *::after,
 *::before {
@@ -7,12 +8,34 @@
 }
 
 html, body {
-  min-width: 375px;
+  min-width: 500px;
+}
+
+body, html {
+  font-family: roboto;
 }
 
 .header {
   display: flex;
   justify-content: center;
+}
+.header__img {
+  margin: 25px 0;
+}
+
+.infos-restau {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.infos-restau__lieu {
+  display: flex;
+  justify-content: center;
+}
+.infos-restau__liste {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
