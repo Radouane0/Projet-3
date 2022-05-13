@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 *,
 *::after,
 *::before {
@@ -42,6 +43,31 @@ body, html {
   font-weight: 800;
 }
 
+.restaurants h2 {
+  margin-left: 20px;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.carte__contenu-infos h3 {
+  font-size: 20px;
+}
+
+.carte__contenu-infos p {
+  font-size: 18px;
+}
+
+.footer__contenu h4 {
+  font-family: "Shrikhand";
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.footer__contenu p {
+  line-height: 30px;
+}
+
 .btn {
   display: flex;
   justify-content: center;
@@ -61,6 +87,21 @@ body, html {
 }
 .header__img {
   margin: 20px 0;
+}
+
+footer {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 15px 0;
+}
+
+.footer__contenu {
+  margin-left: 30px;
+}
+
+.footer__contenu i {
+  width: 10px;
+  margin-right: 20px;
 }
 
 .infos-restau {
@@ -150,6 +191,42 @@ body, html {
 }
 .fonctionnement__card:hover {
   background-color: #f2eafb;
+}
+
+.restaurants {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  height: 1500px;
+  margin-bottom: 0;
+}
+.restaurants__liste {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.carte {
+  margin-top: 35px;
+  width: 100%;
+  height: 300px;
+  max-width: 700px;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 1px 2px 8px #c1c1c1;
+}
+.carte__img {
+  width: 100%;
+  object-fit: cover;
+  height: 220px;
+}
+.carte__contenu {
+  margin: 10px 20px 10px;
+  line-height: 27px;
 }
 
 /*# sourceMappingURL=style.css.map */

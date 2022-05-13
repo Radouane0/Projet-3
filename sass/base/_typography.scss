@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 body, html {
     font-family: roboto;
@@ -29,5 +30,30 @@ body, html {
     margin-left: 20px;
     font-size: 20px;
     font-weight: 800;
+}
+
+.restaurants h2 {
+    margin-left: 20px;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.carte__contenu-infos h3 {
+    font-size: 20px;
+}
+
+.carte__contenu-infos p {
+    font-size: 18px;
+}
+
+.footer__contenu h4 {
+    font-family: "Shrikhand";
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.footer__contenu p {
+    line-height: 30px;
 }
 
