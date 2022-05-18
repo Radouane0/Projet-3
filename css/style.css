@@ -39,8 +39,13 @@ body, html {
 
 .fonctionnement__card p {
   margin-left: 11px;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 800;
+}
+@media screen and (min-width: 769px) {
+  .fonctionnement__card p {
+    font-size: 20px;
+  }
 }
 
 .restaurants h2 {
@@ -78,7 +83,11 @@ body, html {
   font-size: 15px;
   color: white;
   border-radius: 100px;
-  box-shadow: 1px 2px 8px #c1c1c1;
+  box-shadow: 0 0 16px black;
+}
+
+.btn:hover {
+  opacity: 80%;
 }
 
 .nv {
@@ -165,14 +174,10 @@ footer {
   width: 100%;
   text-align: center;
 }
-@media screen and (min-width: 768px) {
-  .infos-restau__liste {
-    color: red;
-  }
-}
 .infos-restau__btn {
   margin-top: 35px;
   margin-bottom: 50px;
+  cursor: pointer;
 }
 
 .villes__map {
@@ -205,6 +210,7 @@ footer {
   transition: background-color 100ms ease;
   height: 60px;
   box-shadow: 1px 2px 8px #c1c1c1;
+  cursor: pointer;
 }
 .fonctionnement__card-step {
   position: absolute;
@@ -226,6 +232,9 @@ footer {
 .fonctionnement__card:hover {
   background-color: #f2eafb;
 }
+.fonctionnement:hover i {
+  color: #9356DC;
+}
 
 .restaurants {
   margin: 50px auto;
@@ -241,6 +250,14 @@ footer {
   align-items: center;
   width: 90%;
   margin: 0 auto;
+}
+@media screen and (min-width: 769px) {
+  .restaurants__liste {
+    width: 42%;
+    margin: 0 40px;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 }
 
 .carte {
@@ -267,6 +284,14 @@ footer {
   position: absolute;
   top: 15px;
   right: 20px;
+}
+
+.carte a {
+  color: black;
+  text-decoration: none;
+}
+.carte a:hover {
+  color: #737373;
 }
 
 /*# sourceMappingURL=style.css.map */
