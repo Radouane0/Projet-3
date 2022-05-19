@@ -53,6 +53,10 @@
     margin-top: 30px;
     padding-left: 20px;
     padding-right: 20px;
+    @media screen and (min-width: map-get($breakpoint, desktop)) {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
     &__card {
         position: relative;
         display: flex;
@@ -66,6 +70,9 @@
         height: 60px;
         box-shadow: 1px 2px 8px #c1c1c1;
         cursor: pointer;
+        @media screen and (min-width: map-get($breakpoint, desktop)) {
+            width: 28%;
+        }
     }
     &__card-step {
         position: absolute;
@@ -100,6 +107,9 @@
     background-color: #f4f4f4;
     height: 1500px;
     margin-bottom: 0;
+    @media screen and (min-width: map-get($breakpoint, tablette)) {
+        height: 830px;
+    }
     &__liste {
         display: flex;
         flex-direction: column;
@@ -107,11 +117,16 @@
         width: 90%;
         margin: 0 auto;
         @media screen and (min-width: map-get($breakpoint, tablette)) {
-            width: 42%;
-            margin: 0 40px;
             flex-wrap: wrap;
             flex-direction: row;
+            margin-left: 55px;
         }
+        @media screen and (min-width: map-get($breakpoint, desktop)) {
+            display: flex;
+            justify-content: center;
+            width: 95%;
+        }
+
     }
 }
     
@@ -127,6 +142,14 @@
     background-color: white;
     box-shadow: 1px 2px 8px #c1c1c1;
     position: relative;
+    &:hover {
+        transform: scale(1.02);
+    }
+    @media screen and (min-width: map-get($breakpoint, tablette)) {
+        width: 46%;
+        margin-right: 27px;
+
+    }
     &__img {
         width: 100%;
         object-fit: cover;
@@ -146,9 +169,6 @@
 .carte a {
     color: black;
     text-decoration: none;
-    &:hover {
-        color: lighten(black, 45%);
-    }
 }
 
 
