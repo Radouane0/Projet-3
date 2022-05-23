@@ -11,6 +11,7 @@
 html, body {
   min-width: 350px;
   max-width: 2000px;
+  margin: auto;
 }
 
 body, html {
@@ -112,19 +113,14 @@ body, html {
 }
 
 .heart {
-  position: absolute;
-  right: 14px;
-  bottom: 11px;
-}
-
-.heart_vide {
-  position: absolute;
-  bottom: 10px;
   font-size: 33px;
 }
 
 .heart_plein {
-  font-size: 33px;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background: linear-gradient(#FF79DA, #9356DC);
 }
 
 .header {
@@ -143,6 +139,13 @@ footer {
 
 .footer__contenu {
   margin-left: 30px;
+}
+@media screen and (min-width: 992px) {
+  .footer__contenu {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+  }
 }
 
 .footer__contenu i {
@@ -256,7 +259,7 @@ footer {
 .fonctionnement__card:hover {
   background-color: #f2eafb;
 }
-.fonctionnement:hover i {
+.fonctionnement__card:hover > i {
   color: #9356DC;
 }
 
@@ -324,6 +327,11 @@ footer {
   margin: 10px 20px 10px;
   line-height: 27px;
 }
+.carte__contenu-coeur i {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
 .carte__nouveau {
   position: absolute;
   top: 15px;
@@ -362,6 +370,11 @@ footer {
   background-color: #f4f4f4;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
+}
+.card_infos__coeur i {
+  position: absolute;
+  top: 30px;
+  right: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

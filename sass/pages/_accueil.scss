@@ -73,31 +73,31 @@
         @media screen and (min-width: map-get($breakpoint, desktop)) {
             width: 28%;
         }
+        &-step {
+            position: absolute;
+            text-align: center;
+            font-size: 14px;
+            left: -10px;
+            padding-top: 5px;
+            height: 20px;
+            width: 25px;
+            border-radius: 50%;
+            background-color: $color-primary;
+            color: white;
+        }
+        i {
+            color: grey;
+            margin-left: 30px;
+            width: 20px;
+        }
+        &:hover {
+            background-color: #f2eafb;
+            & > i {
+                color: $color-primary;
+            }
+
+        }
     }
-    &__card-step {
-        position: absolute;
-        text-align: center;
-        font-size: 14px;
-        left: -10px;
-        padding-top: 5px;
-        height: 20px;
-        width: 25px;
-        border-radius: 50%;
-        background-color: $color-primary;
-        color: white;
-    }
-    &__card i {
-        color: grey;
-        margin-left: 30px;
-        width: 20px;
-    }
-    &__card:hover {
-        background-color: #f2eafb;
-    }
-    &:hover i {
-        color: $color-primary;
-    }
-    
 }
 
 .restaurants {
@@ -158,6 +158,13 @@
     &__contenu {
         margin: 10px 20px 10px;
         line-height: 27px;
+        &-coeur {
+            i {
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+            }
+        }
     }
     &__nouveau {
          position: absolute;

@@ -25,4 +25,13 @@
     background-color: #f4f4f4;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
+    &_infos {
+        &__coeur {
+            i {
+                position: absolute;
+                top: 30px;
+                right: 30px;
+            }
+        }
+    }
 }
