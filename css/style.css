@@ -118,9 +118,8 @@ body, html {
 
 .heart_plein {
   color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
   background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
 }
 
 .header {
