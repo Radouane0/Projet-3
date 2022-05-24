@@ -8,10 +8,17 @@
     font-size: 15px;
     color: white;
     border-radius: 100px;
-    box-shadow: 0 0 16px black;
+    box-shadow: 0 0 8px black;
 }
 
 .btn:hover {
     opacity: 80%;
     transform: scale(1.02);
+}
+
+.boutton-commande {
+    margin: 50px auto;
+    @media screen and (min-width: map-get($breakpoint, tablette)) {
+        font-size: 18px;
+    }
 }
