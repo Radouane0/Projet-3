@@ -133,7 +133,7 @@ body, html {
 .heart_plein {
   color: transparent;
   background: linear-gradient(#FF79DA, #9356DC);
-  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .header {
@@ -473,7 +473,7 @@ footer {
 }
 @media screen and (min-width: 768px) {
   .choix-plat__infos p {
-    font-size: 18px;
+    font-size: 17px;
   }
 }
 .choix-plat__infos p:last-child {
