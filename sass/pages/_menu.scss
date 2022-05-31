@@ -41,6 +41,7 @@
                 position: absolute;
                 top: 30px;
                 right: 30px;
+                cursor: pointer;
                 @media screen and (min-width: map-get($breakpoint, desktop)) {
                     right: 50px;
                 }
