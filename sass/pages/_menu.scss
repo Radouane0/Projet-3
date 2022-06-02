@@ -91,6 +91,7 @@
     font-weight: bold;
     box-shadow: 1px 2px 8px #c1c1c1;
     line-height: 27px;
+    animation: fadeIn 2.5s;
     &__infos {
         height: 100%;
         overflow: hidden;
@@ -111,5 +112,14 @@
     }
 }
 
-
-
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
