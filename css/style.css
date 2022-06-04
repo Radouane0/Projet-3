@@ -534,6 +534,11 @@ footer {
   box-shadow: 1px 2px 8px #c1c1c1;
   line-height: 27px;
   animation: fadeIn 2.5s;
+  position: relative;
+  overflow: hidden;
+}
+.choix-plat:active .checkbox {
+  transform: scaleX(1);
 }
 .choix-plat__infos {
   height: 100%;
@@ -564,6 +569,25 @@ footer {
     opacity: 1;
     transform: translateY(0);
   }
+}
+.checkbox {
+  color: #f4f4f4;
+  background-color: #99E2D0;
+  display: flex;
+  width: 80px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: 550ms ease-in-out;
+}
+
+.check {
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
