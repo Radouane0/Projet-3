@@ -67,7 +67,13 @@ body, html {
 .card_infos__nom {
     font-family: "Shrikhand";
     font-size: 24px;
+    font-weight: normal;
     @media screen and (min-width: map-get($breakpoint, desktop)) {
         margin-left: 20px;
     }
+}
+
+.menu-plat__nom {
+    font-size: 16px;
+    font-weight: normal;
 }

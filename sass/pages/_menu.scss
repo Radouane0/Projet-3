@@ -1,3 +1,5 @@
+//HEADER + IMAGE//
+
 .header a {
     text-decoration: none;
     color: black;
@@ -25,6 +27,8 @@
     }
 }
 
+//NOM CARTE + COEUR//
+
 .card {
     position: relative;
     padding: 30px 20px;
@@ -49,6 +53,8 @@
         }
     }
 }
+
+//MENU//
 
 .menu {
     display: flex;
@@ -80,28 +86,45 @@
     }
 }
 
+//LISTE ENTREES + PLATS + DESSERTS//
+
 .choix-plat {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     background-color: white;
     border-radius: 20px;
-    padding: 7px 20px;
+    padding: 0 20px;
     margin-top: 20px;
     font-weight: bold;
     box-shadow: 1px 2px 8px #c1c1c1;
     line-height: 27px;
     animation: fadeIn 2.5s;
-    position: relative;
     overflow: hidden;
     &:active .checkbox {
         transform: scaleX(1);
+        animation: widthGrow 600ms forwards;
+        > i {
+            transform: rotate(360deg);
+            transition: transform 500ms ease-in-out;
+        }
+    }
+    @media screen and (min-width: map-get($breakpoint, desktop)) {
+        &:hover .checkbox {
+            transform: scaleX(1);
+        animation: widthGrow 600ms forwards;
+        > i {
+            transform: rotate(360deg);
+            transition: transform 500ms ease-in-out;
+        }
+        }
     }
     &__infos {
         height: 100%;
         overflow: hidden;
         white-space: nowrap;
         width: 100%;
+        padding-bottom: 7px;
     }
     &__infos p {
         overflow: hidden;
@@ -114,6 +137,9 @@
     &__infos p:last-child {
         font-weight: 400;
         opacity: 83%;
+    }
+    &__prix {
+        padding-bottom: 7px;
     }
 }
 
@@ -129,16 +155,18 @@
     
 }
 
+//CHECKBOX//
+
 .checkbox {
     color: #f4f4f4;
     background-color: #99E2D0;
     display: flex;
-    width: 80px;
+    width: 0;
     height: 70px;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    right: 0;
+    position: relative;
+    right: -20px;
     top: 0;
     transform: scaleX(0);
     transform-origin: right;
@@ -147,4 +175,13 @@
 
 .check {
     font-size: 30px;
+}
+
+@keyframes widthGrow {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 80px;
+    }
 }

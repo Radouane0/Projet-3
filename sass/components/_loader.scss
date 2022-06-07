@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: disappear 20ms 2000ms forwards ease-in;
+    animation: 3s both 1.5s disappear;
     &__chargement {
         display: block;
         position: relative;
@@ -17,7 +17,7 @@
         border-radius: 50%;
         border: 7px solid transparent;
         border-top-color: $color-primary;
-        animation: spin 2s linear infinite;
+        animation:  2s linear infinite spin;
     }
 }
 
@@ -62,6 +62,6 @@
     }
     100% {
         opacity: 0;
-        z-index: -10;
+        z-index: -1;
     }
 }

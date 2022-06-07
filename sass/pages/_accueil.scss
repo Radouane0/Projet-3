@@ -1,3 +1,5 @@
+//BARRE DE RECHERCHE + BOUTON//
+
 .infos-restau {
     display: flex;
     flex-direction: column;
@@ -40,6 +42,8 @@
     border: transparent;
     font-size: 20px;
 }
+
+//FONCTIONNEMENT//
 
 .article-fonctionnement {
     margin-top: 50px;
@@ -98,6 +102,8 @@
         }
     }
 }
+
+//LISTE RESTAURANTS//
 
 .restaurants {
     margin: 50px auto;
