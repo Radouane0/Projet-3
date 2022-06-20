@@ -75,14 +75,14 @@
 
 .ligne-verte {
     background-color: $color-tertiary;
-    width: 13%;
+    width: 8%;
     height: 3px;
     margin-top: 4px;
     @media screen and (min-width: map-get($breakpoint, tablette)) {
-        width: 8%;
+        width: 4%;
     }
     @media screen and (min-width: map-get($breakpoint, desktop)) {
-        width: 13%;
+        width: 9%;
     }
 }
 
@@ -101,7 +101,7 @@
     line-height: 27px;
     animation: fadeIn 2.5s;
     overflow: hidden;
-    &:active .checkbox {
+    &:hover .checkbox {
         transform: scaleX(1);
         animation: widthGrow 600ms forwards;
         > i {

@@ -10,7 +10,7 @@
 
 html, body {
   min-width: 350px;
-  max-width: 2000px;
+  max-width: 1000px;
   margin: auto;
 }
 
@@ -512,18 +512,18 @@ footer {
 
 .ligne-verte {
   background-color: #99E2D0;
-  width: 13%;
+  width: 8%;
   height: 3px;
   margin-top: 4px;
 }
 @media screen and (min-width: 768px) {
   .ligne-verte {
-    width: 8%;
+    width: 4%;
   }
 }
 @media screen and (min-width: 992px) {
   .ligne-verte {
-    width: 13%;
+    width: 9%;
   }
 }
 
@@ -541,11 +541,11 @@ footer {
   animation: fadeIn 2.5s;
   overflow: hidden;
 }
-.choix-plat:active .checkbox {
+.choix-plat:hover .checkbox {
   transform: scaleX(1);
   animation: widthGrow 600ms forwards;
 }
-.choix-plat:active .checkbox > i {
+.choix-plat:hover .checkbox > i {
   transform: rotate(360deg);
   transition: transform 500ms ease-in-out;
 }
